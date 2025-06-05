@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando apresentação...</title>
+  <script>
+    function isMobile() {
+      return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+    }
+
+    window.onload = function () {
+      var mobileURL = "https://docs.google.com/presentation/d/e/2PACX-1vS7oKBJZQRpmW7IVUVWS3ZkAyyV1WC6flLiX72-v_SDeg9o7_NX1LO1aNyQGf12xup-zZxfxXIa6wJ7/pub?start=false&loop=false&delayms=3000";
+      var desktopURL = "https://docs.google.com/presentation/d/e/2PACX-1vQ_fHIkPIiPieHDQS0Cnmq065ZEKaYpqLIpJ_L_CQi670vQgh1SPhLCDl5DE4yy_9L1_-clVMf0DYFG/pub?start=true&loop=true&delayms=3000";
+      var url = isMobile() ? mobileURL : desktopURL;
+      window.location.href = url;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecionando para a apresentação correta...</p>
+</body>
+</html>
